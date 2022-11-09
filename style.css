@@ -1,0 +1,112 @@
+:root {
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-light);
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+h1 {
+    color: var(--primary-dark);
+    font-size: 70px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 500px;
+    /* background-color: var(--secondary-light); */
+}
+
+.colorPicker {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+button {
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    /* transition: transform 0.7s ease; */
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 40px -10px rgba(99, 99, 99, 0.3),
+        0 0 25px -15px rgba(122, 122, 122, 0.2);
+}
+
+button:hover,
+.colorPicker:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.gridElement {
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-light);
+
+    border-radius: 5px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .3),
+        0 0 25px -15px rgba(0, 0, 0, .2);
+}
+
+
+.footer {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.fa-github {
+    color: var(--primary-dark);
+    font-size: 23px;
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.fa-github:hover {
+    transform: scale(1.4);
+}
