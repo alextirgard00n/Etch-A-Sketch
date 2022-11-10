@@ -15,6 +15,7 @@ html {
     flex-direction: column;
     background-color: var(--primary-light);
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -25,7 +26,8 @@ header {
 
 h1 {
     color: var(--primary-dark);
-    font-size: 70px;
+    font-size: 80px;
+    padding-bottom: 30px;
 }
 
 .main {
@@ -39,13 +41,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 200px;
+    width: 220px;
     height: 500px;
     /* background-color: var(--secondary-light); */
 }
 
 .colorPicker {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 80px;
     height: 80px;
     border: none;
@@ -62,9 +64,8 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
 button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     width: 100%;
     border: 1px solid var(--primary-dark);
     border-radius: 5px;
@@ -72,15 +73,57 @@ button {
     transition: transform 0.2s ease-in-out;
     box-shadow: 0 0 40px -10px rgba(99, 99, 99, 0.3),
         0 0 25px -15px rgba(122, 122, 122, 0.2);
+    font-size: 14px;
 }
 
 button:hover,
-.colorPicker:hover {
+.colorPicker:hover,
+input[type='range']:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.gridElement {
+.sizeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sizeValue {
+    font-size: 20px;
+}
+
+.sizeSlider {
+    padding: 0 100px;
+    /* width: 100%;
+    font-size: 16px; */
+}
+
+.sizeSlider {
+    -webkit-appearance: none;
+    background-color: var(--primary-light);
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+.sizeSlider::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 25px;
+    background: var(--secondary-light);
+}
+
+.sizeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: var(--primary-dark);
+}
+
+.container {
     width: 500px;
     height: 500px;
     background-color: var(--secondary-light);
@@ -92,7 +135,7 @@ button:hover,
 
 
 .footer {
-    padding-bottom: 20px;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
