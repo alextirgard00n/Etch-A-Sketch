@@ -23,11 +23,12 @@ clearBtn.addEventListener('click', () => {
 });
 
 sizeSlider.onmousemove = (e) => sliderValueText(e.target.value);
-sizeSlider.onclick = (e) => sliderValue(e.target.value);
+sizeSlider.onchange = (e) => sliderValue(e.target.value);
 
 function sliderValueText() { //changes text with slider
-    const sliderValue = sizeSlider.value;
-    sizeValue.innerHTML = `${sliderValue} x ${sliderValue}`;
+    value = sizeSlider.value;
+    sizeValue.innerHTML = `${value} x ${value}`;
+    // makeGridSize();
 }
 
 function sliderValue() { //sends final click
