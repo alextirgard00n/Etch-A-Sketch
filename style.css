@@ -103,6 +103,7 @@ input[type='range']:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .sizeValue {
@@ -110,14 +111,15 @@ input[type='range']:hover {
 }
 
 .sizeSlider {
-    padding: 0 100px;
+    /* padding: 0 100px; */
 }
 
 .sizeSlider {
+    width: 100%;
     -webkit-appearance: none;
     background-color: var(--primary-light);
     transition: transform 0.2s ease-in-out;
-    width: 100%;
+
 }
 
 .sizeSlider::-webkit-slider-runnable-track {
@@ -179,7 +181,7 @@ input[type='range']:hover {
     }
 
     .settings {
-        width: 120px;
+        width: 140px;
         height: 400px;
     }
 
@@ -207,7 +209,7 @@ input[type='range']:hover {
     }
 
     .settings {
-        width: 150px;
+        width: 180px;
         height: 378px;
     }
 
