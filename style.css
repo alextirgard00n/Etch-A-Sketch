@@ -35,9 +35,9 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     /* flex: 1; */
-    /* width: 100%;
+    width: 100%;
     max-width: 1400px;
-    margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .settings {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .colorPicker {
-    -webkit-appearance: none;
+    appearance: none;
     width: 80px;
     height: 80px;
     border: none;
@@ -111,12 +111,8 @@ input[type='range']:hover {
 }
 
 .sizeSlider {
-    /* padding: 0 100px; */
-}
-
-.sizeSlider {
     width: 100%;
-    -webkit-appearance: none;
+    appearance: none;
     background-color: var(--primary-light);
     transition: transform 0.2s ease-in-out;
 
@@ -130,7 +126,7 @@ input[type='range']:hover {
 }
 
 .sizeSlider::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     width: 24px;
     height: 24px;
     border-radius: 25px;
